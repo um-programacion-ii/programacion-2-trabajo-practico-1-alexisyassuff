@@ -1,3 +1,0 @@
-interface VehiculoPrinter {
-    void mostrarInformacion();
-}
