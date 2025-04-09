@@ -46,11 +46,5 @@ public class Vehiculo {
         this.marca = marca;
     }
 
-    public void mostrarInformacion() {
-        System.out.println("---------------------Información del Vehículo:-----------------------");
-        System.out.println("Patente: " + patente);
-        System.out.println("Año: " + año);
-        System.out.println("Capacidad de Carga: " + capacidadCargaKg + " kg");
-        System.out.println("Marca: " + marca);
-    }
+
 }
