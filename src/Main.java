@@ -36,6 +36,15 @@ public class Main {
         VehiculoPrinter Impresora = Scania;
         Impresora.mostrarInformacion();
 
+        Auto Ferrari = new Auto();
+        Ferrari.setAño(2025);
+        Ferrari.setMarca("Ferrari");
+        Ferrari.setPatente("KL0956");
+        Ferrari.setCapacidadCargaKg(700);
+        Ferrari.setCantidadPasajeros(3);
+        Impresora = Ferrari;
+        Impresora.mostrarInformacion();
+
     }
 
 
