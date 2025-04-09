@@ -3,6 +3,9 @@ import java.net.SocketTimeoutException;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+    public static void tester(VehiculoPrinter t) {
+        t.mostrarInformacion();
+    }
     public static void main(String[] args) {
         Vehiculo Chevrolet = new Vehiculo();
         Chevrolet.setPatente("AF2320");
@@ -44,6 +47,17 @@ public class Main {
         Ferrari.setCantidadPasajeros(3);
         Impresora = Ferrari;
         Impresora.mostrarInformacion();
+
+        System.out.println("-----------------------------------------Testeo LISKOV-----------------------------------------");
+        Auto Ford1 = new Auto();
+        Ford1.setPatente("LK2720");
+        Ford1.setMarca("Ford");
+        Ford1.setAño(2024);
+        Ford1.setCapacidadCargaKg(370);
+        Ford1.setCantidadPasajeros(5);
+        tester(Scania);
+        tester(Ferrari);
+        tester(Ford1);
 
     }
 
