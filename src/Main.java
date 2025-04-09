@@ -1,4 +1,6 @@
 import java.net.SocketTimeoutException;
+import java.util.ArrayList;
+import java.util.List;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -58,6 +60,15 @@ public class Main {
         tester(Scania);
         tester(Ferrari);
         tester(Ford1);
+
+        List<VehiculoPrinter> vehiculos =new ArrayList<>();
+        System.out.println("<<<<<<< Los autos de la lista son >>>>>>>>>");
+        vehiculos.add(Ford1);
+        vehiculos.add(Ferrari);
+        for (VehiculoPrinter v : vehiculos) {
+            v.mostrarInformacion();
+        }
+
 
     }
 
