@@ -22,9 +22,9 @@ public class Main {
         Fiat.setAño(2015);
         Fiat.setCapacidadCargaKg(246);
 
-        Ford.mostrarInformacion();
-        Fiat.mostrarInformacion();
-        Chevrolet.mostrarInformacion();
+        //Ford.mostrarInformacion();
+        //Fiat.mostrarInformacion();
+        //Chevrolet.mostrarInformacion();
 
     }
 
