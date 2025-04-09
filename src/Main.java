@@ -26,6 +26,16 @@ public class Main {
         //Fiat.mostrarInformacion();
         //Chevrolet.mostrarInformacion();
 
+        Camion Scania = new Camion();
+        Scania.setAño(2020);
+        Scania.setMarca("Scania");
+        Scania.setPatente("KD2342");
+        Scania.setCapacidadCargaKg(100000);
+        Scania.setTieneAcoplado(true);
+
+        VehiculoPrinter Impresora = Scania;
+        Impresora.mostrarInformacion();
+
     }
 
 
